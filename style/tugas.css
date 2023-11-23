@@ -1,0 +1,198 @@
+@font-face {
+  font-family: "Blackbird";
+  src: url("../fonts/Blackbird.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../imgs/background-header.png");
+  background-color: transparent;
+}
+.container {
+  width: 960px; /* Menetapkan lebar container */
+  margin: 0 auto; /* Memusatkan container di tengah halaman */
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr auto; /* Satu kolom untuk menu, satu kolom untuk logo */
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-family: "Blackbird";
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  text-align: left; /* Mengatur teks menu ke kiri */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+.content {
+  text-align: center;
+}
+
+.data1 h1 {
+  font-weight: bold;
+  line-height: 5px;
+  color: yellow;
+  font-family: "Blackbird";
+  font-size: 40px;
+}
+
+.data1 h2 {
+  font-weight: bold;
+  line-height: 5px;
+  font-family: "Blackbird";
+  font-size: 20px;
+  color: yellow;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+button {
+  text-transform: uppercase;
+  color: white;
+  background-color: #d63826;
+  padding: 10px 20px;
+  font-size: 10px;
+}
+
+blockquote {
+  padding: 5px;
+  text-align: left;
+  background: linear-gradient(to right, #ffeb3b, #ffc107); /* Gradient kuning */
+  font-size: 15px;
+}
+
+blockquote footer {
+  font-style: italic;
+  margin-top: 5px;
+  color: black;
+}
+.card_3 {
+  align-items: center;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.data2 {
+  border-radius: 10px;
+  background-color: black;
+}
+
+.data2 h1 {
+  line-height: 10px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.data2 h2 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-style: bold;
+  font-size: 18px;
+}
+
+.data2 p {
+  word-spacing: 2px;
+  padding: 10px;
+  text-align: justify;
+  color: white;
+  font-weight: bold;
+  font-style: bold;
+}
+
+.card_4 {
+  align-items: center;
+  padding: 10px;
+}
+
+.card_4 p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+}
+
+.card_4::after {
+  content: "";
+  display: block;
+  height: 4px; /* Ketebalan garis bawah */
+  background-color: black; /* Warna garis bawah */
+  width: 60%; /* Sesuaikan dengan panjang section 3 */
+  position: absolute;
+  bottom: 0;
+  left: 20%; /* Posisikan di tengah */
+}
+.footer {
+  background-color: gainsboro;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.footer-section {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.footer-section h1 {
+  font-family: "Blackbird";
+  font-size: 20px;
+}
+
+.footer-section h2 {
+  line-height: 4px;
+  font-size: 16px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+}
